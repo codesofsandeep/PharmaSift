@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmaSift</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="Shortcut icon" href="./images/android-chrome-192x192.png">
+</head>
+
+<body class="bg-gradient-to-r from-indigo-50 via-purple-50 to-green-50 ...">
+
+    <!-- ---------------------------------------------------NavBar section------------------------------------------- -->
+    <nav>
+        <div class="flex bg-white fixed z-50 items-center justify-around gap-8  py-5 h-[60px] w-[100%] ">
+
+            <a href="" >
+                <img src="./images/phramsift-logo.png" alt="logo" class="h-[150px] w-[130px]  ">
+            </a>
+
+            <ul class="flex items-center  gap-20 list-none">
+
+                <li class="font-semibold text-slate-400 hover:text-rose-500">
+                    <a href="" class="flex gap-2 ">
+                        <img src="./images/marker.svg" alt="" height="20px" width="20px">Location
+                    </a>
+                </li>
+
+                <li class="font-semibold text-slate-400 hover:text-rose-500">
+                    <a href="" class="flex gap-2">
+                        <img src="./images/bolt.svg" alt="" height="20px" width="20px">offers
+                    </a>
+                </li>
+
+                <li class="font-semibold text-slate-400 hover:text-rose-500">
+                    <a href="" class="flex gap-2">
+                        <img src="./images/shopping-cart.svg" alt="" height="20px" width="20px">Cart
+                    </a>
+                </li>
+
+                <li class="relative group font-semibold text-slate-400 hover:text-rose-500">
+                    <a href="#" class="flex items-center gap-2">
+                        <img src="./images/brightness (1).svg" alt="Mode icon" width="20" height="20">Mode
+                    </a>
+
+                    <div class="absolute hidden bg-white shadow-lg rounded  w-36 group-hover:block">
+                        <a href="#" class=" px-4 py-2 text-black hover:bg-gray-100 flex gap-3">
+                            <img src="./images/brightness (1).svg" alt="Mode icon" width="20" height="20">Light
+                        </a>
+
+                        <a href="#" class=" px-4 py-2 text-black hover:bg-gray-100 flex gap-3">
+                            <img src="./images/moon-stars.svg" alt="Mode icon" width="20" height="20">Dark
+                        </a>
+
+                        <a href="#" class=" px-4 py-2 text-black hover:bg-gray-100 flex gap-3">
+                            <img src="./images/computer.svg" alt="Mode icon" width="20" height="20">System
+                        </a>
+                    </div>
+                </li>
+
+                <li class="relative group font-semibold text-slate-400 hover:text-rose-500">
+                    <a href="" class="flex gap-2">
+                        <img src="./images/circle-user.svg" alt="" height="20px" width="20px">Account
+                    </a>
+
+                    <div class="absolute hidden bg-white shadow-lg rounded  w-32 group-hover:block">
+                        <a href="#" class=" px-4 py-2 text-black hover:bg-gray-100 flex gap-3">
+                            <img src="./images/sign-in-alt.svg" alt="Mode icon" width="20" height="20">Login
+                        </a>
+
+                        <a href="#" class=" px-4 py-2 text-black hover:bg-gray-100 flex gap-3">
+                            <img src="./images/sign-in-alt.svg" alt="Mode icon" width="20" height="20">Sign up
+                        </a>
+
+                        <a href="#" class=" px-4 py-2 text-black hover:bg-gray-100 flex gap-3">
+                            <img src="./images/settings.svg" alt="Mode icon" width="20" height="20">System
+                        </a>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="" class="flex gap-2">Need Help ?</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ---------------------------------------------------Intro section------------------------------------------- -->
+    <section>
+        <div class="flex items-center justify-center h-[600px]">
+            <div class="flex flex-col items-center justify-center">
+                <h1 class="text-[50px] font-semibold">"Healing Made Easy - Your Online Pharmacy."</h1>
+
+                <p class="text-[18px] ">Prescription to <span class="text-rose-600">Wellness</span> Starts Here</p>
+                <br>
+                <div class="flex gap-10">
+                    <a href="#">
+                        <button class="py-2 px-4 border rounded-md border-black font-semibold bg-white text-black transition duration-500 ease-in-out hover:bg-red-700 hover:text-white ">Get
+                            Started</button>
+                    </a>
+                    <input type="text" placeholder="Quick search.."
+                        class="text-center w-[300px] border border-slate-500 rounded-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ---------------------------------------------------shop section--------------------------------------------- -->
+
+    <section class="sticky top-10">
+        <div class="h-[55px] w-[100%]  bg-white">
+            <div class="flex items-center bg-white justify-center py-2   ">
+                <ul class="flex gap-36  justify-evenly ">
+
+                    <div class="relative group">
+                        <!-- Trigger Button -->
+                        <li class="flex font-semibold mt-3">
+                            <img src="./images/angle-small-down.svg"
+                                class="h-[20px] mt-1 transition-transform duration-300 group-hover:rotate-180">
+                            Shop By Category
+                        </li>
+
+                        <!-- Dropdown Menu -->
+                        <div
+                            class="w-[878%] absolute left-[-210%] hidden bg-white shadow-lg group-hover:block transition-all ease-in-out duration-200">
+                            <ul class="flex flex-row gap-10 py-5 px-2">
+                                <li>
+                                    <a href="#" class="flex  items-center text-gray-700 hover:text-blue-500">
+                                        <img src="./images/angle-small-down.svg" class="h-[20px] mr-2 " alt="Icon">
+                                        Vitamins & Nutritions
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="flex items-center text-gray-700 hover:text-blue-500">
+                                        <img src="./images/angle-small-down.svg" class="h-[20px] mr-2 " alt="Icon">
+                                        Nutritional Drinks
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="flex items-center text-gray-700 hover:text-blue-500">
+                                        <img src="./images/angle-small-down.svg" class="h-[20px] mr-2 " alt="Icon">
+                                        Stomach Care
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center text-gray-700 hover:text-blue-500">
+                                        <img src="./images/angle-small-down.svg" class="h-[20px] mr-2 " alt="Icon">
+                                        Fitness Supplements
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center text-gray-700 hover:text-blue-500">
+                                        <img src="./images/angle-small-down.svg" class="h-[20px] mr-2 " alt="Icon">
+                                        Personal Care
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="flex items-center text-gray-700 hover:text-blue-500">
+                                        <img src="./images/angle-small-down.svg" class="h-[20px] mr-2 " alt="Icon">
+                                        Immunity Booster
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- ---------------------------------------------------------------------------------------------------------------- -->
+
+                    <div class="relative group">
+                        <!-- Trigger Button -->
+                        <li class="flex font-semibold mt-3">
+                            <img src="./images/angle-small-down.svg"
+                                class="h-[20px] mt-1 transition-transform duration-300 group-hover:rotate-180">
+                            Healthy Snacks
+                        </li>
+
+                        <!-- Dropdown Menu -->
+                        <div
+                            class="w-[200%] absolute  hidden bg-white shadow-lg group-hover:block transition-all ease-in-out duration-200">
+                            <ul class="flex flex-col gap-2 py-2 px-2">
+                                <li>
+                                    <a href="#" class="flex  items-center text-gray-700 hover:text-blue-500">
+                                        Granola & protiens bars
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="flex items-center text-gray-700 hover:text-blue-500">
+                                        Oats
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="flex items-center text-gray-700 hover:text-blue-500">
+                                        Peanut Butter
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center text-gray-700 hover:text-blue-500">
+                                        Honey
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center text-gray-700 hover:text-blue-500">
+                                        Dry Fruits & Berries
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center text-gray-700 hover:text-blue-500">
+                                        Cookies
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center text-gray-700 hover:text-blue-500">
+                                        Muesli & Cereals
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- ------------------------------------------------------------------------------------------------------------------------------ -->
+                    <div class="relative group">
+                        <!-- Trigger Button -->
+                        <li class="flex font-semibold mt-3">
+                            <img src="./images/angle-small-down.svg"
+                                class="h-[20px] mt-1 transition-transform duration-300 group-hover:rotate-180">
+                            Health Articles
+                        </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ---------------------------------------------------Order section ----------------------------------------------- -->
+    <section>
+        <div class="h-[300px] w-[100%]  flex items-center justify-center  ">
+            <div class="h-[200px] w-[90%] flex items-center justify-center gap-20 ">
+                <div class="h-[150px] w-[200px] rounded-lg shadow-custom flex items-center justify-center ">
+                    <a href="#">
+                        <p class="text-[16px] font-semibold">Order Medicine</p>
+                        <br>
+                        <button
+                            class="flex items-center gap-2 border border-red-700 rounded-lg py-3 px-4 font-semibold text-red-700 transition duration-500 ease-in-out hover:bg-red-700 hover:text-white">
+                            <img src="./images/capsules.png" height="16px" width="16px" alt="">Order Now
+                            <img src="./images/arrow-small-right.svg" alt="arrow"
+                                class="w-5 h-5 mt-0.5 transition duration-500 ease-in-out transform hover:translate-x-1">
+                        </button>
+
+                    </a>
+                </div>
+
+                <div class="h-[150px] w-[200px] rounded-lg shadow-custom flex items-center justify-center ">
+                    <a href="#">
+                        <p class="text-[16px] font-semibold">Order by Prescription</p>
+                        <br>
+                        <button
+                            class="flex items-center gap-2 border border-red-700 rounded-lg py-3 px-4 font-semibold text-red-700 transition duration-500 ease-in-out hover:bg-red-700 hover:text-white">
+                            <img src="./images/prescription-bottle-alt.png" height="16px" width="16px" alt="">Order Now
+                            <img src="./images/arrow-small-right.svg" alt="arrow"
+                                class="w-5 h-5 mt-0.5 transition duration-500 ease-in-out transform hover:translate-x-1">
+                        </button>
+                    </a>
+                </div>
+
+                <div class="h-[150px] w-[200px] rounded-lg shadow-custom flex items-center justify-center ">
+                    <a href="#">
+                        <p class="text-[16px] font-semibold">Order With Whatsapp</p>
+                        <br>
+                        <button
+                            class="flex items-center gap-2 border border-red-700 rounded-lg py-3 px-4 font-semibold text-red-700 transition duration-500 ease-in-out hover:bg-red-700 hover:text-white">
+                            <img src="./images/whatsapp.png" height="16px" width="16px" alt=""> Order Now
+                            <img src="./images/arrow-small-right.svg" alt="arrow"
+                                class="w-5 h-5 mt-0.5 transition duration-500 ease-in-out transform hover:translate-x-1">
+                        </button>
+                    </a>
+                </div>
+
+                <div class="h-[150px] w-[200px] rounded-lg shadow-custom flex items-center justify-center ">
+                    <a href="#">
+                        <p class="text-[16px] font-semibold">Call Us to Order</p>
+                        <br>
+                        <button
+                            class="flex items-center gap-2 border border-red-700 rounded-lg py-3 px-4 font-semibold text-red-700 transition duration-500 ease-in-out hover:bg-red-700 hover:text-white ">
+                            <img src="./images/phone-call.png" height="16px" width="16px" alt="">Order Now
+                            <img src="./images/arrow-small-right.svg" alt="arrow"
+                                class="w-5 h-5 mt-0.5 transition duration-500 ease-in-out transform hover:translate-x-1">
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ---------------------------------------------------Medicine Section---------------------------- -->
+
+    <section>
+        <h2 class="relative  ml-12 font-semibold hover:text-red-600">Popular Deals</h2>
+        <div class="h-[550px] w-[100%]  flex flex-wrap justify-evenly items-center  bg-slate-100">
+            
+            <div class="h-[250px] w-[280px]  rounded-lg flex flex-col px-2 bg-white shadow-custom ">
+                <h2 class="font-semibold text-lg">Etacept 25mg Injection</h2>
+                <p class="text-sm flex gap-2 text-red-600"><img src="./images/prescription.png" alt="" height="20px"
+                        width="20px"> Prescription Required</p>
+                <div class="text-[14px] mt-2">
+                    <p class="pt-2">MARKETER :</p>
+                    <p class="text-gray-400 underline decoration-1">Cipla Ltd</p>
+                    <p class="pt-2">SALT COMPOSITION :</p>
+                    <p class="text-gray-400 underline decoration-1">Etanercept (25mg)</p>
+                    <p class="pt-2">STORAGE :</p>
+                    <p class="text-gray-400 text-[12px] underline decoration-1">Store in a refrigerator (2 - 8°C). Do
+                        not freeze.</p>
+                </div>
+                <div class="flex items-center justify-center mt-1 relative">
+
+                    <div class="group">
+                        <button
+                            class="flex items-center gap-2 border border-red-700 rounded-md py-1 px-2 font-semibold text-[12px] text-red-700 transition duration-500 ease-in-out hover:bg-red-700 hover:text-white">
+                            View Details
+                            <img src="./images/arrow-small-right.svg" alt="arrow"
+                                class="w-5 h-5 mt-0.5 transition duration-500 ease-in-out transform hover:translate-x-1">
+                        </button>
+
+                        <div
+                            class="hidden absolute bottom-[-10px] left-[-15%] w-[400px] bg-white border border-gray-300 p-2 shadow-md group-hover:block">
+
+                            <p class="text-center font-semibold">Price Comparison Chart</p>
+                            <hr>
+                            <p>Actual Price : <span class="text-red-600">MRP₹</span> 3300.9</p>
+                            <p>Goverment Price : <span class="text-red-600">MRP₹</span> 3100.9 </p>
+                            <p>Medical Store Price : <span class="text-red-600">MRP₹</span> 3600.9</p>
+                            <hr>
+                            <p class="text-center font-semibold">Our Price : <span class="text-red-600">MRP₹</span> 2700
+                                <span class="text-green-600 text-[12px] ">&nbsp;&nbsp; Get 18% OFF</span>
+                            </p><br>
+                            <button class="border border-sky-500 px-4 py-1 ml-32 text-sm font-bold text-green-500 ">ADD
+                            </button>
+                            <a href="#"><span class="text-sm ml-24 text-blue-600 underline 0">Show More</span></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="h-[250px] w-[280px]  rounded-lg flex flex-col px-2 bg-white shadow-custom ">
+                <h2 class="font-semibold text-lg">Allegra 120mg Tablet</h2>
+                <p class="text-sm flex gap-2 text-red-600"><img src="./images/prescription.png" alt="" height="20px"
+                        width="20px"> Prescription Required</p>
+                <div class="text-[14px] mt-2">
+                    <p class="pt-2">MARKETER :</p>
+                    <p class="text-gray-400 underline decoration-1">Sanofi India Ltd</p>
+                    <p class="pt-2">SALT COMPOSITION :</p>
+                    <p class="text-gray-400 underline decoration-1">Fexofenadine (120mg)</p>
+                    <p class="pt-2">STORAGE :</p>
+                    <p class="text-gray-400 text-[12px] underline decoration-1">Store below 30°C</p>
+                </div>
+                <div class="flex items-center justify-center mt-1 relative">
+
+                    <div class="group">
+                        <button
+                            class="flex items-center gap-2 border border-red-700 rounded-md py-1 px-2 font-semibold text-[12px] text-red-700 transition duration-500 ease-in-out hover:bg-red-700 hover:text-white">
+                            View Details
+                            <img src="./images/arrow-small-right.svg" alt="arrow"
+                                class="w-5 h-5 mt-0.5 transition duration-500 ease-in-out transform hover:translate-x-1">
+                        </button>
+
+                        <div
+                            class="hidden absolute bottom-[-10px] left-[-20%] w-[400px] bg-white border border-gray-300 p-2 shadow-md group-hover:block">
+
+                            <p class="text-center font-semibold">Price Comparison Chart</p>
+                            <hr>
+                            <p>Actual Price : <span class="text-red-600">MRP₹</span> 250.9</p>
+                            <p>Goverment Price : <span class="text-red-600">MRP₹</span> 205.9 </p>
+                            <p>Medical Store Price : <span class="text-red-600">MRP₹</span> 285.9</p>
+                            <hr>
+                            <p class="text-center font-semibold">Our Price : <span class="text-red-600">MRP₹</span>
+                                198.2 <span class="text-green-600 text-[12px]">&nbsp;&nbsp;Get 18% OFF</span></p><br>
+                            <button class="border border-sky-500 px-4 py-1 ml-32 text-sm font-bold text-green-500 ">ADD
+                            </button>
+                            <a href="#"><span class="text-sm ml-24 text-blue-600 underline 0">Show More</span></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="h-[250px] w-[280px]  rounded-lg flex flex-col px-2 bg-white shadow-custom ">
+                <h2 class="font-semibold text-lg">Paleno 125mg Capsule</h2>
+                <p class="text-sm flex gap-2 text-red-600"><img src="./images/prescription.png" alt="" height="20px"
+                        width="20px"> Prescription Required</p>
+                <div class="text-[14px] mt-2">
+                    <p class="pt-2">MARKETER :</p>
+                    <p class="text-gray-400 underline decoration-1">Sun Pharmaceutical Industries Ltd</p>
+                    <p class="pt-2">SALT COMPOSITION :</p>
+                    <p class="text-gray-400 underline decoration-1">Palbociclib (125mg)</p>
+                    <p class="pt-2">STORAGE :</p>
+                    <p class="text-gray-400 text-[12px] underline decoration-1">Store below 30°C.</p>
+                </div>
+                <div class="flex items-center justify-center mt-1 relative">
+
+                    <div class="group">
+                        <button
+                            class="flex items-center gap-2 border border-red-700 rounded-md py-1 px-2 font-semibold text-[12px] text-red-700 transition duration-500 ease-in-out hover:bg-red-700 hover:text-white">
+                            View Details
+                            <img src="./images/arrow-small-right.svg" alt="arrow"
+                                class="w-5 h-5 mt-0.5 transition duration-500 ease-in-out transform hover:translate-x-1">
+                        </button>
+
+                        <div
+                            class="hidden absolute bottom-[-10px] left-[-20%] w-[400px] bg-white border border-gray-300 p-2 shadow-md group-hover:block">
+
+                            <p class="text-center font-semibold">Price Comparison Chart</p>
+                            <hr>
+                            <p>Actual Price : <span class="text-red-600">MRP₹</span> 5890.5</p>
+                            <p>Goverment Price : <span class="text-red-600">MRP₹</span> 5520.9 </p>
+                            <p>Medical Store Price : <span class="text-red-600">MRP₹</span> 5600.9</p>
+                            <hr>
+                            <p class="text-center font-semibold">Our Price : <span class="text-red-600">MRP₹</span>
+                                5320.3 <span class="text-green-600 text-[12px]">&nbsp;&nbsp;Get 18% OFF</span></p><br>
+                            <button class="border border-sky-500 px-4 py-1 ml-32 text-sm font-bold text-green-500 ">ADD
+                            </button>
+                            <a href="#"><span class="text-sm ml-24 text-blue-600 underline 0">Show More</span></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="h-[250px] w-[280px]  rounded-lg flex flex-col px-2 bg-white shadow-custom ">
+                <h2 class="font-semibold text-lg">Jardiance 10mg Tablet</h2>
+                <p class="text-sm flex gap-2 text-red-600"><img src="./images/prescription.png" alt="" height="20px"
+                        width="20px"> Prescription Required</p>
+                <div class="text-[14px] mt-2">
+                    <p class="pt-2">MARKETER :</p>
+                    <p class="text-gray-400 underline decoration-1">Boehringer Ingelheim</p>
+                    <p class="pt-2">SALT COMPOSITION :</p>
+                    <p class="text-gray-400 underline decoration-1">Empagliflozin (10mg)</p>
+                    <p class="pt-2">STORAGE :</p>
+                    <p class="text-gray-400 text-[12px] underline decoration-1">Store below 30°C.</p>
+                </div>
+                <div class="flex items-center justify-center mt-1 relative">
+
+                    <div class="group">
+                        <button
+                            class="flex items-center gap-2 border border-red-700 rounded-md py-1 px-2 font-semibold text-[12px] text-red-700 transition duration-500 ease-in-out hover:bg-red-700 hover:text-white">
+                            View Details
+                            <img src="./images/arrow-small-right.svg" alt="arrow"
+                                class="w-5 h-5 mt-0.5 transition duration-500 ease-in-out transform hover:translate-x-1">
+                        </button>
+
+                        <div
+                            class="hidden absolute bottom-[-10px] right-[-20%] w-[400px] bg-white border border-gray-300 p-2 shadow-md group-hover:block">
+
+                            <p class="text-center font-semibold">Price Comparison Chart</p>
+                            <hr>
+                            <p>Actual Price : <span class="text-red-600">MRP₹</span> 500.9</p>
+                            <p>Goverment Price : <span class="text-red-600">MRP₹</span> 485.9 </p>
+                            <p>Medical Store Price : <span class="text-red-600">MRP₹</span> 550.9</p>
+                            <hr>
+                            <p class="text-center font-semibold">Our Price : <span class="text-red-600">MRP₹</span>
+                                485.5 <span class="text-green-600 text-[12px]">&nbsp;&nbsp;Get 17% OFF</span></p><br>
+                            <button class="border border-sky-500 px-4 py-1 ml-32 text-sm font-bold text-green-500 ">ADD
+                            </button>
+                            <a href="#"><span class="text-sm ml-24 text-blue-600 underline 0">Show More</span></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="h-[250px] w-[280px]  rounded-lg flex flex-col px-2 bg-white shadow-custom ">
+                <h2 class="font-semibold text-lg">Stemetil MD Tablet</h2>
+                <p class="text-sm flex gap-2 text-red-600"><img src="./images/prescription.png" alt="" height="20px"
+                        width="20px"> Prescription Required</p>
+                <div class="text-[14px] mt-2">
+                    <p class="pt-2">MARKETER :</p>
+                    <p class="text-gray-400 underline decoration-1">Abbott</p>
+                    <p class="pt-2">SALT COMPOSITION :</p>
+                    <p class="text-gray-400 underline decoration-1">Prochlorperazine (5mg)</p>
+                    <p class="pt-2">STORAGE :</p>
+                    <p class="text-gray-400 text-[12px] underline decoration-1">Store below 30°C.</p>
+                </div>
+                <div class="flex items-center justify-center mt-1 relative">
+
+                    <div class="group">
+                        <button
+                            class="flex items-center gap-2 border border-red-700 rounded-md py-1 px-2 font-semibold text-[12px] text-red-700 transition duration-500 ease-in-out hover:bg-red-700 hover:text-white">
+                            View Details
+                            <img src="./images/arrow-small-right.svg" alt="arrow"
+                                class="w-5 h-5 mt-0.5 transition duration-500 ease-in-out transform hover:translate-x-1">
+                        </button>
+
+                        <div
+                            class="hidden absolute bottom-[-10px] left-[-15%] w-[400px] bg-white border border-gray-300 p-2 shadow-md group-hover:block">
+
+                            <p class="text-center font-semibold">Price Comparison Chart</p>
+                            <hr>
+                            <p>Actual Price : <span class="text-red-600">MRP₹</span> 144.9</p>
+                            <p>Goverment Price : <span class="text-red-600">MRP₹</span> 134.9 </p>
+                            <p>Medical Store Price : <span class="text-red-600">MRP₹</span> 165.9</p>
+                            <hr>
+                            <p class="text-center font-semibold">Our Price : <span class="text-red-600">MRP₹</span>
+                                125.5 <span class="text-green-600 text-[12px]">&nbsp;&nbsp;Get 15% OFF</span></p><br>
+                            <button class="border border-sky-500 px-4 py-1 ml-32 text-sm font-bold text-green-500 ">ADD
+                            </button>
+                            <a href="#"><span class="text-sm ml-24 text-blue-600 underline 0">Show More</span></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="h-[250px] w-[280px]  rounded-lg flex flex-col px-2 bg-white shadow-custom ">
+                <h2 class="font-semibold text-lg">Sumo Tablet</h2>
+                <p class="text-sm flex gap-2 text-red-600"><img src="./images/prescription.png" alt="" height="20px"
+                        width="20px"> Prescription Required</p>
+                <div class="text-[14px] mt-2">
+                    <p class="pt-2">MARKETER :</p>
+                    <p class="text-gray-400 underline decoration-1">Alkem Laboratories Ltd</p>
+                    <p class="pt-2">SALT COMPOSITION :</p>
+                    <p class="text-gray-400 underline decoration-1">Nimesulide + Paracetamol (325mg)</p>
+                    <p class="pt-2">STORAGE :</p>
+                    <p class="text-gray-400 text-[12px] underline decoration-1">Store below 30°C.</p>
+                </div>
+                <div class="flex items-center justify-center mt-1 relative">
+
+                    <div class="group">
+                        <button
+                            class="flex items-center gap-2 border border-red-700 rounded-md py-1 px-2 font-semibold text-[12px] text-red-700 transition duration-500 ease-in-out hover:bg-red-700 hover:text-white">
+                            View Details
+                            <img src="./images/arrow-small-right.svg" alt="arrow"
+                                class="w-5 h-5 mt-0.5 transition duration-500 ease-in-out transform hover:translate-x-1">
+                        </button>
+
+                        <div
+                            class="hidden absolute bottom-[-10px] left-[-20%] w-[400px] bg-white border border-gray-300 p-2 shadow-md group-hover:block">
+
+                            <p class="text-center font-semibold">Price Comparison Chart</p>
+                            <hr>
+                            <p>Actual Price : <span class="text-red-600">MRP₹</span>130.9</p>
+                            <p>Goverment Price : <span class="text-red-600">MRP₹</span> 100.9 </p>
+                            <p>Medical Store Price : <span class="text-red-600">MRP₹</span> 135.9</p>
+                            <hr>
+                            <p class="text-center font-semibold">Our Price : <span class="text-red-600">MRP₹</span> 98.3
+                                <span class="text-green-600 text-[12px]">&nbsp;&nbsp;Get 18% OFF</span>
+                            </p><br>
+                            <button class="border border-sky-500 px-4 py-1 ml-32 text-sm font-bold text-green-500 ">ADD
+                            </button>
+                            <a href="#"><span class="text-sm ml-24 text-blue-600 underline 0">Show More</span></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="h-[250px] w-[280px]  rounded-lg flex flex-col px-2 bg-white shadow-custom ">
+                <h2 class="font-semibold text-lg">Etacept 25mg Injection</h2>
+                <p class="text-sm flex gap-2 text-red-600"><img src="./images/prescription.png" alt="" height="20px"
+                        width="20px"> Prescription Required</p>
+                <div class="text-[14px] mt-2">
+                    <p class="pt-2">MARKETER :</p>
+                    <p class="text-gray-400 underline decoration-1">Cipla Ltd</p>
+                    <p class="pt-2">SALT COMPOSITION :</p>
+                    <p class="text-gray-400 underline decoration-1">Etanercept (25mg)</p>
+                    <p class="pt-2">STORAGE :</p>
+                    <p class="text-gray-400 text-[12px] underline decoration-1">Store in a refrigerator (2 - 8°C). Do
+                        not freeze.</p>
+                </div>
+                <div class="flex items-center justify-center mt-1 relative">
+
+                    <div class="group">
+                        <button
+                            class="flex items-center gap-2 border border-red-700 rounded-md py-1 px-2 font-semibold text-[12px] text-red-700 transition duration-500 ease-in-out hover:bg-red-700 hover:text-white">
+                            View Details
+                            <img src="./images/arrow-small-right.svg" alt="arrow"
+                                class="w-5 h-5 mt-0.5 transition duration-500 ease-in-out transform hover:translate-x-1">
+                        </button>
+
+                        <div
+                            class="hidden absolute bottom-[-10px]  left-[-15%] w-[400px] bg-white border border-gray-300 p-2 shadow-md group-hover:block">
+
+                            <p class="text-center font-semibold">Price Comparison Chart</p>
+                            <hr>
+                            <p>Actual Price : <span class="text-red-600">MRP₹</span> 3300.9</p>
+                            <p>Goverment Price : <span class="text-red-600">MRP₹</span> 3100.9 </p>
+                            <p>Medical Store Price : <span class="text-red-600">MRP₹</span> 3600.9</p>
+                            <hr>
+                            <p class="text-center font-semibold">Our Price : <span class="text-red-600">MRP₹</span> 2700
+                                <span class="text-green-600 text-[12px]">&nbsp;&nbsp;Get 18% OFF</span>
+                            </p><br>
+                            <button class="border border-sky-500 px-4 py-1 ml-32 text-sm font-bold text-green-500 ">ADD
+                            </button>
+                            <a href="#"><span class="text-sm ml-24 text-blue-600 underline 0">Show More</span></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="h-[250px] w-[280px]  rounded-lg flex flex-col px-2 bg-white shadow-custom ">
+                <h2 class="font-semibold text-lg">Vymada 50mg Tablet</h2>
+                <p class="text-sm flex gap-2 text-red-600"><img src="./images/prescription.png" alt="" height="20px"
+                        width="20px"> Prescription Required</p>
+                <div class="text-[14px] mt-2">
+                    <p class="pt-2">MARKETER :</p>
+                    <p class="text-gray-400 underline decoration-1">Novartis India Ltd</p>
+                    <p class="pt-2">SALT COMPOSITION :</p>
+                    <p class="text-gray-400 underline decoration-1">Sacubitril (24mg) + Valsartan (26mg)</p>
+                    <p class="pt-2">STORAGE :</p>
+                    <p class="text-gray-400 text-[12px] underline decoration-1">Store below 30°C.</p>
+                </div>
+                <div class="flex items-center justify-center mt-1 relative">
+
+                    <div class="group">
+                        <button
+                            class="flex items-center gap-2 border border-red-700 rounded-md py-1 px-2 font-semibold text-[12px] text-red-700 transition duration-500 ease-in-out hover:bg-red-700 hover:text-white">
+                            View Details
+                            <img src="./images/arrow-small-right.svg" alt="arrow"
+                                class="w-5 h-5 mt-0.5 transition duration-500 ease-in-out transform hover:translate-x-1">
+                        </button>
+
+                        <div
+                            class="hidden absolute bottom-[-10px] right-[-40px] w-[400px] bg-white border border-gray-300 p-2 shadow-md group-hover:block">
+
+                            <p class="text-center font-semibold">Price Comparison Chart</p>
+                            <hr>
+                            <p>Actual Price : <span class="text-red-600">MRP₹</span> 605.9</p>
+                            <p>Goverment Price : <span class="text-red-600">MRP₹</span> 575.9 </p>
+                            <p>Medical Store Price : <span class="text-red-600">MRP₹</span> 620.9</p>
+                            <hr>
+                            <p class="text-center font-semibold">Our Price : <span class="text-red-600">MRP₹</span>
+                                595.1 <span class="text-green-600 text-[12px]">&nbsp;&nbsp;Get 18% OFF</span></p><br>
+                            <button class="border border-sky-500 px-4 py-1 ml-32 text-sm font-bold text-green-500 ">ADD
+                            </button>
+                            <a href="#"><span class="text-sm ml-24 text-blue-600 underline 0">Show More</span></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- --------------------------------------------------Health Concern Transition------------------------------ -->
+
+    <section>
+        <h2 class="relative top-12 ml-4 font-semibold">Shop By health Concerns</h2>
+        <div class="flex mt-16 space-x-16 bg-gradient-to-r from-sky-100 via-white to-sky-100 overflow-hidden group">
+            <div class="flex animate-loop-scroll items-center justify-evenly gap-14 px-2">
+
+                <div class="h-[180px] w-[180px] shadow-custom">
+                    <a href="">
+                        <img src="./images/diabetes.webp"
+                            class="h-[150px] w-[180px] grayscale group-hover:grayscale-0 transition duration-300">
+                        <p class="text-center text-sm font-semibold">Diabetes</p>
+                    </a>
+                </div>
+
+                <div class="h-[180px] w-[180px] shadow-custom">
+                    <a href="">
+                        <img src="./images/healthcare.webp"
+                            class="h-[150px] w-[180px] grayscale group-hover:grayscale-0 transition duration-300">
+                        <p class="text-center text-sm font-semibold">Heart Care</p>
+                    </a>
+                </div>
+
+                <div class="h-[180px] w-[180px] shadow-custom">
+                    <a href="">
+                        <img src="./images/stomach.webp"
+                            class="h-[150px] w-[180px] grayscale group-hover:grayscale-0 transition duration-300">
+                        <p class="text-center text-sm font-semibold">Stomach Care</p>
+                    </a>
+                </div>
+
+                <div class="h-[180px] w-[180px] shadow-custom">
+                    <a href="">
+                        <img src="./images/liver.webp"
+                            class="h-[150px] w-[180px] grayscale group-hover:grayscale-0 transition duration-300">
+                        <p class="text-center text-sm font-semibold">Liver Care</p>
+                    </a>
+                </div>
+
+                <div class="h-[180px] w-[180px] shadow-custom">
+                    <a href="">
+                        <img src="./images/bone.webp"
+                            class="h-[150px] w-[180px] grayscale group-hover:grayscale-0 transition duration-300">
+                        <p class="text-center text-sm font-semibold">Bone & Joints</p>
+                    </a>
+                </div>
+
+                <div class="h-[180px] w-[180px] shadow-custom">
+                    <a href="">
+                        <img src="./images/kidney.webp"
+                            class="h-[150px] w-[180px] grayscale group-hover:grayscale-0 transition duration-300">
+                        <p class="text-center text-sm font-semibold">kidney Care</p>
+                    </a>
+                </div>
+
+                <div class="h-[180px] w-[180px] shadow-custom">
+                    <a href="">
+                        <img src="./images/derma.webp"
+                            class="h-[150px] w-[180px] grayscale group-hover:grayscale-0 transition duration-300">
+                        <p class="text-center text-sm font-semibold">Derma</p>
+                    </a>
+                </div>
+
+                <div class="h-[180px] w-[180px] shadow-custom">
+                    <a href="">
+                        <img src="./images/respo.webp"
+                            class="h-[150px] w-[180px] grayscale group-hover:grayscale-0 transition duration-300">
+                        <p class="text-center text-sm font-semibold">Respiratory</p>
+                    </a>
+                </div>
+
+                <div class="h-[180px] w-[180px] shadow-custom">
+                    <a href="">
+                        <img src="./images/eye.webp"
+                            class="h-[150px] w-[180px] grayscale group-hover:grayscale-0 transition duration-300">
+                        <p class="text-center text-sm font-semibold">Eye Care</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --------------------------------------------------Fearture brand section------------------------------------- -->
+
+    <section class="bg-white">
+        <div class="h-[200px] w-[100%] mt-10 bg-white ">
+            <h2 class="text-[18px] font-semibold ml-5 py-4">Featured brands</h2>
+            <div class="h-[150px] w-[100%] flex flex-wrap items-center justify-evenly">
+
+                <a href="#">
+                    <div class="h-[100px] w-[100px] ">
+                        <img src="./images/swie.avif" alt="">
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="h-[100px] w-[100px] ">
+                        <img src="./images/tynar.avif" alt="">
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="h-[100px] w-[100px] ">
+                        <img src="./images/volini.avif" alt="">
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="h-[100px] w-[100px] ">
+                        <img src="./images/organic.avif" alt="">
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="h-[100px] w-[100px] ">
+                        <img src="./images/tata.webp" alt="">
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="h-[100px] w-[100px] ">
+                        <img src="./images/tejas.webp" alt="">
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="h-[100px] w-[100px] ">
+                        <img src="./images/dabur.webp" alt="" class="border-none rounded-[50%] shadow-custom">
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="h-[100px] w-[100px] ">
+                        <img src="./images/znadu.webp" alt="" class="border-none rounded-[50%] shadow-custom">
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="h-[100px] w-[100px] ">
+                        <img src="./images/himala.webp" alt="" class="border-none rounded-[50%] shadow-custom">
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="h-[100px] w-[100px] ">
+                        <img src="./images/kerla.webp" alt="" class="border-none rounded-[50%] shadow-custom">
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- --------------------------------------------------information section------------------------------------ -->
+    <section>
+        <div class="h-[600px] w-[100%] mt-10 py-5 px-5 bg-white">
+            <p class="text-[20px] font-semibold">Stay Healthy with PharmaSift: Your Favourite Online Pharmacy and
+                Healthcare Platform</p><br>
+            <p class="text-[16px] font-semibold">We Bring Care to Health.</p><br>
+            <p class="text-slate-500">PharmaSift is India's leading digital healthcare platform. From doctor
+                consultations on chat to online pharmacy and lab tests at home: we have it all covered for you. Having
+                delivered over 25 million orders in 1000+ cities till date, we are on a mission to bring "care" to
+                "health" to give you a flawless healthcare experience.</p>
+            <br><br>
+            <p class="text-[16px] font-semibold">PharmaSift: Your Favourite Online Pharmacy!</p><br>
+            <p class="text-slate-500">Pharmasift is an online pharmacy platform designed to make healthcare affordable
+                and accessible. Our mission is to help customers save money on essential medicines by comparing prices
+                across government-regulated schemes, local pharmacies, and our own discounted rates. With Pharmasift,
+                users can effortlessly find the best deals, upload prescriptions for quick processing, and enjoy
+                doorstep delivery—all while ensuring transparency and quality in every transaction.</p>
+            <br>
+            <p class="text-[16px] font-semibold">PharmaSift: Key Features</p><br>
+            <p class="text-[14px] font-semibold">Medicine Search and Comparison:
+            <ul class="list-disc ml-4">
+                <li>Users can search for medicines and see a comparison of prices across</li>
+                <li>Government-regulated prices (e.g., Jan Aushadhi)</li>
+                <li>Pharmasift's discounted prices.</li>
+            </ul>
+            </p>
+
+            <br>
+
+            <p class="text-[14px] font-semibold">Discounted Pricing:
+            <ul class="list-disc ml-4">
+                <li>Clearly highlight that Pharmasift offers the lowest prices.</li>
+                <li>Include discounts, bulk purchase offers, and subscription plans.</li>
+            </ul>
+            </p>
+        </div>
+    </section>
+    
+    <!-- --------------------------------------------------Contact section---------------------------------------- -->
+    <section>
+        <br>
+        <div class="h-[450px] w-[100%] flex items-center justify-center bg-red-50">
+            <div class="w-[95%] flex items-center justify-evenly gap-10">
+                <div class="h-[400px] w-[25%] ">
+                    <p class="font-semibold text-[17px]">Know Us</p>
+                    <br>
+                    <ul class="text-sm  text-slate-500">
+                        <a href="#">
+                            <li class="hover:text-sky-500 transition-colors">About Us</li>
+                        </a>
+                        <a href="#">
+                            <li class="hover:text-sky-500 transition-colors">Contact Us</li>
+                        </a>
+                        <a href="#">
+                            <li class="hover:text-sky-500 transition-colors">Press Coverage</li>
+                        </a>
+                        <a href="#">
+                            <li class="hover:text-sky-500 transition-colors">Careers</li>
+                        </a>
+                        <a href="#">
+                            <li class="hover:text-sky-500 transition-colors">Business Partnership</li>
+                        </a>
+                        <a href="#">
+                            <li class="hover:text-sky-500 transition-colors">Become a Health Partner</li>
+                        </a>
+                        <a href="#">
+                            <li class="hover:text-sky-500 transition-colors">Corporate Governance</li>
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="h-[400px] w-[25%] ">
+                    <p class="font-semibold text-[17px]">Our Policies</p>
+                    <br>
+                    <ul class="text-sm  text-slate-500">
+                        <a href="#">
+                            <li class="hover:text-sky-500 transition-colors">Privacy Policy</li>
+                        </a>
+                        <a href="#">
+                            <li class="hover:text-sky-500 transition-colors">Terms and Conditions</li>
+                        </a>
+                        <a href="#">
+                            <li class="hover:text-sky-500 transition-colors">Editorial Policy</li>
+                        </a>
+                        <a href="#">
+                            <li class="hover:text-sky-500 transition-colors">Return Policy</li>
+                        </a>
+                        <a href="#">
+                            <li class="hover:text-sky-500 transition-colors">IP Policy</li>
+                        </a>
+                        <a href="#">
+                            <li class="hover:text-sky-500 transition-colors">Grievance Redressal Policy</li>
+                        </a>
+                        <a href="#">
+                            <li class="hover:text-sky-500 transition-colors">Fake Jobs and Fraud Disclaimer</li>
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="h-[400px] w-[25%] ">
+                    <p class="font-semibold text-[17px]">Our Services</p>
+                    <br>
+                    <ul class="text-sm  text-slate-500 ho">
+                        <a href="#">
+                            <li class="hover:text-sky-500 transition-colors">Order Medicines</li>
+                        </a>
+                        <a href="#">
+                            <li class="hover:text-sky-500 transition-colors">Book Lab Tests</li>
+                        </a>
+                        <a href="#">
+                            <li class="hover:text-sky-500 transition-colors">Consult a Doctor</li>
+                        </a>
+                        <a href="#">
+                            <li class="hover:text-sky-500 transition-colors">Ayurveda Articles</li>
+                        </a>
+                        <a href="#">
+                            <li class="hover:text-sky-500 transition-colors">Hindi Articles</li>
+                        </a>
+                        <a href="#">
+                            <li class="hover:text-sky-500 transition-colors">English Articles</li>
+                        </a>
+                        <a href="#">
+                            <li class="hover:text-sky-500 transition-colors">Care Plan</li>
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="h-[400px] w-[25%] ">
+                    <p class="font-semibold text-[17px]">Connect</p>
+                    <br>
+                    <ul class="text-sm  text-slate-500 ho">
+                        <a href="#">
+                            <li class="hover:text-sky-500 transition-colors">Social Links</li>
+                        </a>
+                        <div class="h-[50px] w-[200px]  flex items-center justify-evenly">
+                            <a href="#"><img src="./images/facebook.png" alt="facebook" height="25px" width="25px"></a>
+                            <a href="#"><img src="./images/instagram.png" alt="instagram" height="25px"
+                                    width="25px"></a>
+                            <a href="#"><img src="./images/twitter.png" alt="twitter" height="25px" width="25px"></a>
+                            <a href="#"><img src="./images/youtube.png" alt="youtube" height="25px" width="25px"></a>
+                            <a href="#"><img src="./images/linkedin.png" alt="linkedin" height="25px" width="25px"></a>
+                        </div>
+                        <br>
+                        <div class="h-[270px] w-[100%]  flex flex-col gap-3">
+                            <div class="h-[80px] w-[20%px]">
+                                <p class="text-center text-black">Reliable</p>
+                                <div class="flex gap-5 items-center justify-center ">
+                                    <img src="./images/shield.png" alt="" height="30px" width="50px">
+                                    <p>All products displayed on PharmaSift are procured from verified and licensed
+                                        pharmacies. </p>
+                                </div>
+                            </div>
+
+                            <div class="h-[80px] w-[20%px]">
+                                <div class="h-[80px] w-[20%px]">
+                                    <p class="text-center text-black">Secure</p>
+                                    <div class="flex gap-5 items-center justify-center">
+                                        <img src="./images/padlock.png" alt="" height="30px" width="50px">
+                                        <p>PharmaSift uses Secure Sockets Layer (SSL) 128-bit encryption. </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="h-[80px] w-[20%px]">
+                                <div class="h-[80px] w-[20%px]">
+                                    <p class="text-center text-black">Affordable</p>
+                                    <div class="flex gap-5 items-center justify-center">
+                                        <img src="./images/wallet.png" alt="" height="30px" width="50px">
+                                        <p>Find affordable medicine substitutes, save up to 50% on health products. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- -------------------------------------------------End section-------------------------------------------------- -->
+    <section>
+        <div class="h-[120px] w-[100%] bg-rose-50 text-center py-5 ">
+            <hr>
+            <p class="text-slate-500 font-semibold text-sm py-2">© 2024 PharmaSift. All rights reserved. All medicines are dispensed in compliance with the Drugs and Cosmetics Act, 1940 and Drugs and Cosmetics Rules, 1945. We do not process requests for Schedule X and habit forming drugs.</p>
+                <div class="flex items-center justify-end gap-5 px-4">
+                    <img src="./images/card.png" alt="" height="20px" width="40px">
+                    <img src="./images/visa.png" alt="" height="20px" width="40px">
+                    <img src="./images/payment.png" alt="" height="20px" width="50px">
+                </div>
+        </div>
+    </section>
+</body>
+
+</html>
